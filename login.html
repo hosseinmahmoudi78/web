@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>log in</title>
+</head>
+<body>
+<form name="form" onsubmit="return valid()">
+<div class="loginf">
+    <br><br>
+    <label class="lbl" name="uname"><b>نام کاربری</label>
+    <label>
+        <input type="text" placeholder="Username" name="uname" required>
+    </label>
+<br>
+    <label class="lbl" name="psw"><b>رمز عبور</b></label>
+    <label>
+        <input type="password" placeholder="Password" name="psw" required>
+    </label>
+	
+    <button type="submit">ورود</button>
+	
+	<h3 style="color:#cccccc">حسابی ندارید؟<a href="signup.html" style="color:#5050ff">ثبت نام</a></h3>
+	
+</div>
+<a href="index.html" class="home-btn">بازگشت به خانه</a>
+</form>
+<script>
+    function valid() {
+        let x = document.forms["form"]["uname"].value;
+        let y = document.forms["form"]["psw"].value;
+        if (x === "admin" && y === "12345678") {
+            alert("وارد شدید");
+            return false;
+        }else {
+            alert("نام کاربری یا رمز عبور اشتباه است");
+        }
+    }
+</script>
+</body>
+</html>

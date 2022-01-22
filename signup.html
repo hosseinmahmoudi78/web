@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>sign up</title>
+</head>
+<body>
+<form name="form" onsubmit="return valid()">
+<div class="signinf">
+    <br><br>
+    <label class="lbl" name="uname"><b>نام کاربری</b></label>
+    <label>
+        <input type="text" placeholder="Username" name="uname" required>
+    </label>
+<br>
+
+	<label class="lbl" name="email"><b>آدرس ایمیل</b></label>
+    <label>
+        <input type="text" placeholder="Email address" name="email" required>
+    </label>
+	
+	<br>
+    <label class="lbl" name="psw"><b>رمز عبور</b></label>
+    <label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    </label>
+
+    <button type="submit">ثبت نام</button>
+	<h3 style="color:#cccccc">از قبل حسابی دارید؟<a href="login.html" style="color:#2020aa">ورود</a></h3>
+</div>
+<a href="index.html" class="home-btn">بازگشت به خانه</a>
+</form>
+<script>
+    function valid() {
+        let x = document.forms["form"]["uname"].value;
+        let y = document.forms["form"]["psw"].value;
+        if (y.length < 7 ) {
+            alert("رمز خیلی کوتاه است.");
+            return false;
+        }else {
+            alert("شما ثبت نام شدید.");
+        }
+    }
+</script>
+</body>
+</html>

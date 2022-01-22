@@ -1,0 +1,177 @@
+
+body {
+	background: #0e2237;
+}
+.box{
+	display: block;
+	width: 35%;
+	margin: 100px auto 0 auto;
+}
+
+h2{
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+}
+
+.btn {
+	display: block;
+	color: white;
+	text-decoration: none;
+	background-color: #35575f;
+	border-radius: 80%;
+	margin-bottom: 30px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 20px;
+	width: 500px;
+	box-shadow: -3px 9px 20px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.box-shop{
+	display: block;
+	width: 80%;
+	margin: 80px auto 0 auto;
+}
+.card {
+	display: inline-block;
+	box-shadow: 0 16px 34px 0 rgba(0, 0, 0, 0.5);
+	max-width: 300px;
+	margin: auto 40px;
+	text-align: center;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+}
+.home-btn{
+	display: block;
+	text-align: center;
+	padding: 10px 25px;
+	background-color: #969696;
+	width: 10%;
+	border-radius: 30px;
+	position: fixed;
+	bottom: 10px;
+	left:650px;
+}
+.abtus{
+	text-align: center;
+	margin-top: 200px;
+	margin-right: 100px;
+}
+.aboutus{
+	display: inline;
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #ac8181;
+	position: relative;
+	animation-name: anim;
+	animation-duration: 10s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes anim {
+	0%   {background-color:red; left:0; top:0;}
+	25%  {background-color:yellow; left:200px; top:0;}
+	50%  {background-color:blue; left:200px; top:200px;}
+	75%  {background-color:green; left:0; top:200px;}
+	100% {background-color:red; left:0; top:0;}
+}
+.contact-us-box{
+	position: relative;
+	width: 80%;
+	height: 500px;
+	margin: 100px auto 0 auto;
+	border-radius: 50px;
+	background-color: #35575f;
+	text-align: center;
+}
+.contact-us-box p{
+	padding-top: 100px;
+	font-size: 50px;
+	animation-name: change-cl;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes change-cl {
+	0%   {color:red}
+	25%  {color:yellow}
+	50%  {color:blue}
+	75%  {color:green}
+	100% {color:red}
+}
+.login{
+	padding: 6px 20px;
+	border-radius: 40px;
+	background-color: #35575f;
+}
+
+.loginf{
+	width: 20%;
+	height: 300px;
+	margin: 100px auto 0 auto;
+	border-radius: 50px;
+	background-color: #35575f;
+	position: relative;
+	text-align: center;
+}
+
+.signinf{
+	width: 20%;
+	height: 390px;
+	margin: 100px auto 0 auto;
+	border-radius: 50px;
+	background-color: #35575f;
+	position: relative;
+	text-align: center;
+}
+.lbl{
+	margin-top: 200px;
+}
+input {
+	text-align: center;
+	width: 85%;
+	padding: 8px 15px;
+	margin: 15px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "NAZANIN";
+	src: url("/B-NAZANIN.woff2")format("woff2");
+}
+
+P{
+	font-family: "NAZANIN";
+}
+
+
+
